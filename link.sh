@@ -1,10 +1,10 @@
 set -e
 USER=charlie.wren
 
-for FILE in .tmux.conf .vimrc
+for FILE in .tmux.conf .vimrc .zshrc
 
 do
-    	DEST=/Users/${USER}/$FILE
+    DEST=/Users/${USER}/$FILE
 	if [ -e $DEST ] ; then
 		echo "Removing $DEST"...
 		rm $DEST
