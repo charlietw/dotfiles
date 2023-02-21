@@ -22,3 +22,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -r ~/.zshrc.path ]; then
     source ~/.zshrc.path
 fi
+
+# Needed for git to be able to read GPG key
+export GPG_TTY=$(tty)
