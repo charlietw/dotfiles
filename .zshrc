@@ -25,3 +25,6 @@ fi
 
 # Needed for git to be able to read GPG key
 export GPG_TTY=$(tty)
+
+# Needed for tmuxinator
+export EDITOR='vim'
