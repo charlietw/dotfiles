@@ -1,7 +1,7 @@
 set -e
 USER=charlie.wren
 
-for FILE in .tmux.conf .vimrc .zshrc
+for FILE in .tmux.conf .vimrc .zshrc .config/tmuxinator/hmrc.yml .config/tmuxinator/budget.yml
 
 do
     DEST=/Users/${USER}/$FILE
