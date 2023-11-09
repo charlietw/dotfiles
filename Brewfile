@@ -1,0 +1,12 @@
+tap "homebrew/bundle"
+brew "aws-vault"
+brew "gettext"
+brew "go"
+brew "openssl@3"
+brew "openjdk"
+brew "openssl@1.1"
+brew "poetry"
+brew "pyenv"
+brew "terraform", link: false
+brew "tfenv"
+brew "tmuxinator"
