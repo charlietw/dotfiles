@@ -1,0 +1,15 @@
+name: k9s
+root: ~/
+
+windows:
+  - editor:
+      layout: tiled
+      panes:
+        - dev:
+          - aws-vault exec dev-platform -- k9s --context dev
+        - uk-prod:
+          - aws-vault exec uk-platform -- k9s --context uk-prod --readonly
+        - us-prod:
+          - aws-vault exec us-platform -- k9s --context or-prod --readonly
+        - or-prod:
+          - aws-vault exec us-platform -- k9s --context us-prod --readonly

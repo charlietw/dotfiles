@@ -1,7 +1,7 @@
 # /Users/charlie.wren/.config/tmuxinator/budget.yml
 
 name: budget
-root: ~/Documents/projects/personal/ledger/
+root: ~/Documents/personal/budget/
 
 windows:
   - editor:
