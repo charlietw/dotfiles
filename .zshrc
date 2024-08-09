@@ -45,5 +45,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Warning if in aws-vault subshell
+if [ -n "${AWS_VAULT}" ] ; then
+  echo -e "$(tput setab 1)In aws-vault env ${AWS_VAULT}$(tput sgr0)"
+  export PS1="$(tput setab 1)<<${AWS_VAULT}>>$(tput sgr0) ${PS1}";
+fi;
+
 source ~/.zshrc_eckoh_alias
 
